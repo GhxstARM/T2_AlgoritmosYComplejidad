@@ -1,0 +1,10 @@
+Las mediciones se realizaron en Windows, se compiló y se ejecutó en una terminal de Linux Ubuntu 22.04.2 LTS 
+en un equipo con procesador Intel Core i7-11800H 
+@ 2.30 GHz y 16 GB de RAM. Se compiló C++ con g++ 13.2.0; los gráficos se generaron con Python 3.13.2. 
+Se procesaron 288 instancias: 12 dimensiones entre $4\times4$ y $1024\times2048$, 
+cuatro tipos de terreno (libre, murallas, minas y mixto), 
+dos dominios de valores (D10 y D1000) y tres muestras por combinación.
+Todas usan tres vidas iniciales y penalización por mina 10 o 1000 según el dominio.
+Fuerza bruta se ejecutó solo para $N+M\leq32$. 
+Los tiempos se miden por ejecución; la memoria corresponde al pico de asignaciones dinámicas
+del algoritmo, excluyendo la grilla de entrada.
